@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Purchase Plans - Wrist Abnormality Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='purchasePlan.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='headerLogo.jpg') }}" alt="Logo" class="logo">
+        <h1>Wrist Abnormality Detection</h1>
+        <a href="{{ url_for('dashboard') }}" class="home-btn">Home</a>
+    </header>
+    <main>
+        <h2>Choose a Package</h2>
+        <div class="packages-container">
+            <div class="package">
+                <h3>BASIC <br>Package</h3>
+                <p>100 Credits</p>
+                <p>Price: RS 5,000</p>
+                <button class="purchase-btn">Purchase</button>
+            </div>
+            <div class="package">
+                <h3>STANDARD Package</h3>
+                <p>200 Credits</p>
+                <p>Price: RS 9,000</p>
+                <button class="purchase-btn">Purchase</button>
+            </div>
+            <div class="package">
+                <h3>PREMIUM Package</h3>
+                <p>300 Credits</p>
+                <p>Price: RS 12,000</p>
+                <button class="purchase-btn">Purchase</button>
+            </div>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='purchasePlan.js') }}"></script>
+</body>
+</html>

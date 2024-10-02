@@ -1,0 +1,91 @@
+body {
+  margin: 20px;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('view.jpg'); /* Replace 'medical_bg.jpg' with the URL of your medical-related background image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: background-change 40s infinite;
+  
+}
+@keyframes background-change {
+  0% { background-image: url(view.jpg); }
+  25% { background-image: url(view1.webp); }
+  50% { background-image: url(view2.jpg); }
+  75% { background-image: url(view3.webp); }
+  100% { background-image: url(view.jpg); } /* Return to first image */
+}
+
+header {
+  position: fixed;
+  background-color: rgba(0, 51, 102, 0.8);
+  color: #fff;
+  padding: 4px;
+  margin-left: 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid #f4f2f8; 
+  border-radius: 25px;
+  z-index: 1000;
+  width: 96%;
+  top: 20px;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  margin-left: 20px;
+  vertical-align: middle;
+}
+
+h1 {
+  margin: 0;
+  font-size: 24px;
+  margin-right: 740px;
+}
+
+.home-btn {
+  background-color: #ff7f50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+main {
+  max-width: 50%; /* Adjust as needed */
+  margin-right: 20px; /* Add some margin */
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background for readability */
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.image-container {
+  margin-bottom: 20px;
+}
+
+#show-image-btn {
+  background-color: #4caf50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#show-image-btn:hover,
+.home-btn:hover {
+  opacity: 0.8;
+}

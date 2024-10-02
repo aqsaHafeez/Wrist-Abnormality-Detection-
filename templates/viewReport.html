@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Report - Wrist Abnormality Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='viewReport.css') }}">
+</head>
+<body>
+    <header>
+        <img src="{{ url_for('static', filename='headerLogo.jpg') }}" alt="Logo" class="logo">
+        <h1>Wrist Abnormality Detection</h1>
+        <a href="{{ url_for('dashboard') }}" class="home-btn">Home</a>
+    </header>
+    <main>
+        <h2>Click button to view the Report</h2>
+        <div class="image-container" id="image-container">
+            <!-- Diagnosed image will be displayed here -->
+        </div>
+        <button id="show-image-btn">View Report</button>
+    </main>
+    <script src="{{ url_for('static', filename='viewReport.js') }}"></script>
+</body>
+</html>

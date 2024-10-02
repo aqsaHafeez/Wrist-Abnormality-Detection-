@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wrist X-Ray Detection System</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+  <main>
+    <section id="title">
+      <div class="container">
+        <div class="title-content">
+          <span class="wrist-square">WRIST</span>
+          <h1 class="title-text">X-Ray Detection System</h1>
+        </div>
+      </div>
+    </section>
+    <section id="sign-up">
+      <div class="container">
+        <div class="form-container">
+          <div id="sign"><h1 id="head">Sign Up</h1></div>
+          <form action="{{ url_for('signup') }}" method="post">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="yourname@gmail.com">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required placeholder="Enter your name">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required placeholder="Enter password">
+            <label for="ConfirmPassword">Confirm Password</label>
+            <input type="password" id="ConfirmPassword" name="ConfirmPassword" required placeholder="Enter password again">
+            <label for="question1">What was your first pet's name?</label>
+            <input type="text" id="question1" name="question1" required placeholder="Enter security question1">
+            <label for="question2">What is the name of your favorite teacher?</label>
+            <input type="text" id="question2" name="question2" required placeholder="Enter security question2">
+            
+            <button type="submit">Sign Up</button>
+          </form>
+          <p>Already have an account? <a href="{{ url_for('login') }}">Log in</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+</body>
+</html>
